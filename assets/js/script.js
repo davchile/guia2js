@@ -27,3 +27,15 @@
 //     alert("conoces el password")
 // }
 
+const pass=document.querySelector("#password")  //declaro el input
+const btn=document.querySelector("#btn")    //declaro el boton para escucharlo
+const result=document.querySelector("#result")  //declaro el texto de resultado
+
+btn.addEventListener("click", ()=> {
+    const value = pass.value    //me traigo el valor del password
+    if(value === "secret") {    //agrego la condicion y la comparo con el input
+        result.innerHTML = "Lo lograste"    //genero el resultado
+    }            
+})
+
+
