@@ -111,16 +111,30 @@
 //     alert("nop")
 // }
 
-const current = document.querySelector("#current")
-const before = document.querySelector("#before")
+// const current = document.querySelector("#current")
+// const before = document.querySelector("#before")
+// const btn = document.querySelector("#send")
+
+// btn.addEventListener("click", () => {
+//     const currentValue = current.value
+//     const beforeValue = before.value
+//     if (currentValue != "" || beforeValue != "") {
+//         alert("Correcto")
+//     } else {
+//         alert("Incorrecto")
+//     }
+// })
+
+const opt1 = document.querySelector("#opt1")
+const opt2 = document.querySelector("#opt2")
 const btn = document.querySelector("#send")
 
 btn.addEventListener("click", () => {
-    const currentValue = current.value
-    const beforeValue = before.value
-    if (currentValue != "" || beforeValue != "") {
-        alert("Correcto")
-    } else {
-        alert("Incorrecto")
-    }
+    const opt1Checked = opt1.checked
+    const opt2Checked = opt2.checked
+if (opt1Checked == true && opt2Checked == true) {
+    alert("Los dos elementos están marcados") 
+} else {
+    alert("Uno de los elementos no está marcado")
+}
 })
