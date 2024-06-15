@@ -125,6 +125,20 @@
 //     }
 // })
 
+// const opt1 = document.querySelector("#opt1")
+// const opt2 = document.querySelector("#opt2")
+// const btn = document.querySelector("#send")
+
+// btn.addEventListener("click", () => {
+//     const opt1Checked = opt1.checked
+//     const opt2Checked = opt2.checked
+// if (opt1Checked == true && opt2Checked == true) {
+//     alert("Los dos elementos están marcados") 
+// } else {
+//     alert("Uno de los elementos no está marcado")
+// }
+// })
+
 const opt1 = document.querySelector("#opt1")
 const opt2 = document.querySelector("#opt2")
 const btn = document.querySelector("#send")
@@ -132,8 +146,8 @@ const btn = document.querySelector("#send")
 btn.addEventListener("click", () => {
     const opt1Checked = opt1.checked
     const opt2Checked = opt2.checked
-if (opt1Checked == true && opt2Checked == true) {
-    alert("Los dos elementos están marcados") 
+if (opt1Checked == true || opt2Checked == true) {
+    btn.disabled = false 
 } else {
     alert("Uno de los elementos no está marcado")
 }
