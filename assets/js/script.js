@@ -141,14 +141,18 @@
 
 const opt1 = document.querySelector("#opt1")
 const opt2 = document.querySelector("#opt2")
-const btn = document.querySelector("#send")
+const btnCheck = document.querySelector("#check")
 
-btn.addEventListener("click", () => {
+btnCheck.addEventListener("click", () => {
     const opt1Checked = opt1.checked
     const opt2Checked = opt2.checked
-if (opt1Checked == true || opt2Checked == true) {
-    btn.disabled = false 
-} else {
-    alert("Uno de los elementos no está marcado")
-}
+    const btnSend = document.querySelector("#send")
+    const resultSpan = document.querySelector("#result")
+    if (opt1Checked == true || opt2Checked == true) {
+        btnSend.disabled = false
+        resultSpan.innerHTML = "siiii"
+    } else {
+        alert("Uno de los elementos no está marcado")
+        btnSend.disabled = true
+    }
 })
