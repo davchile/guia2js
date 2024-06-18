@@ -139,20 +139,45 @@
 // }
 // })
 
-const opt1 = document.querySelector("#opt1")
-const opt2 = document.querySelector("#opt2")
-const btnCheck = document.querySelector("#check")
+// const opt1 = document.querySelector("#opt1")
+// const opt2 = document.querySelector("#opt2")
+// const btnCheck = document.querySelector("#check")
 
-btnCheck.addEventListener("click", () => {
-    const opt1Checked = opt1.checked
-    const opt2Checked = opt2.checked
-    const btnSend = document.querySelector("#send")
-    const resultSpan = document.querySelector("#result")
-    if (opt1Checked == true || opt2Checked == true) {
-        btnSend.disabled = false
-        resultSpan.innerHTML = "siiii"
-    } else {
-        alert("Uno de los elementos no está marcado")
-        btnSend.disabled = true
-    }
-})
+// btnCheck.addEventListener("click", () => {
+//     const opt1Checked = opt1.checked
+//     const opt2Checked = opt2.checked
+//     const btnSend = document.querySelector("#send")
+//     const resultSpan = document.querySelector("#result")
+//     if (opt1Checked == true || opt2Checked == true) {
+//         btnSend.disabled = false
+//         resultSpan.innerHTML = "siiii"
+//     } else {
+//         alert("Uno de los elementos no está marcado")
+//         btnSend.disabled = true
+//     }
+// })
+
+// Otra forma de escribir if else
+// if("100" === 100) alert("Son estrictamente iguales")
+//     else alert("No son estrictamente iguales")
+
+// Operadores ternarios
+// if (1 + 1 === "2") {
+//     console.log("Son igualitos")
+// } else {
+//     console.log("De nuevo, no es lo mismo un Number que un String")
+// }
+// Se puede escribir de la siguiente manera:
+// 1 + 1 === "2"
+//     ? console.log("Son igualitos")
+//     : console.log("De nuevo, no es lo mismo un Number que un String")
+
+// Transformacion de condicionales 
+// const cuotas = 5
+// cuotas >= 6
+
+//     ? console.log("Serán aplicados intereses")
+//     : console.log("No serán aplicados intereses en esta compra")
+
+// Otro uso para el operador ||
+input = document.querySelector("#input").value || 10 //ejecutar en console
